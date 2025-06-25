@@ -1,0 +1,26 @@
+name: BountyPM
+main: BountyPM\Main
+version: 1.0.0
+api: 5.0.0
+author: Phoenix
+description: Sistema de recompensas para jugadores.
+
+commands:
+  bounty:
+    description: Comandos para gestionar recompensas.
+    usage: "/bounty <create|list|remove>"
+    permission: bountypm.command.bounty
+
+permissions:
+  bountypm.command.bounty:
+    description: Permite el uso general del comando /bounty y sus subcomandos (create, list, remove).
+    default: op
+  bountypm.command.bounty.create:
+    description: Permite al jugador crear recompensas.
+    default: true
+  bountypm.command.bounty.list:
+    description: Permite al jugador ver la lista de recompensas.
+    default: true
+  bountypm.command.bounty.remove:
+    description: Permite al administrador remover recompensas.
+    default: op 
